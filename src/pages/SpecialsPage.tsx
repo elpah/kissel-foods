@@ -3,7 +3,7 @@ import SectionHeading from '@/components/shared/SectionHeading';
 import SocialButton from '@/components/shared/SocialButton';
 import { SPECIALS } from '@/data/specials.data';
 import { motion } from 'framer-motion';
-import { Tag, Instagram, Facebook} from 'lucide-react';
+import { Tag, Instagram, Facebook } from 'lucide-react';
 import { memo } from 'react';
 
 type SpecialCardProps = {
@@ -59,9 +59,7 @@ const SpecialCard = memo(
               <span className="text-base text-slate-400 line-through sm:text-lg">
                 {originalPrice}
               </span>
-              <span className="text-2xl font-black text-amber-600 sm:text-3xl">
-                {specialPrice}
-              </span>
+              <span className="text-2xl font-black text-amber-600 sm:text-3xl">{specialPrice}</span>
             </div>
 
             <div className="inline-flex items-center gap-2 self-start rounded-full bg-slate-50 px-3 py-1.5 text-sm text-slate-500 sm:self-auto">

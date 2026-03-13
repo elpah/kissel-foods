@@ -111,7 +111,14 @@ type SelectFieldProps = {
   onChange: (e: ChangeEvent<HTMLSelectElement>) => void;
 };
 
-const SelectField = ({ id, label, value, required = false, options, onChange }: SelectFieldProps) => (
+const SelectField = ({
+  id,
+  label,
+  value,
+  required = false,
+  options,
+  onChange,
+}: SelectFieldProps) => (
   <div>
     <label htmlFor={id} className="mb-2 block text-sm font-bold text-slate-700">
       {label} {required && <span aria-hidden="true">*</span>}
@@ -125,7 +132,7 @@ const SelectField = ({ id, label, value, required = false, options, onChange }: 
       className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-slate-900 outline-none transition-all focus:border-amber-400 focus:ring-2 focus:ring-amber-100"
     >
       <option value="">Select a topic</option>
-      {options.map((option) => (
+      {options.map(option => (
         <option key={option.value} value={option.value}>
           {option.label}
         </option>
@@ -157,15 +164,13 @@ const InfoItem = memo(({ Icon, title, children }: InfoItemProps) => (
 
 InfoItem.displayName = 'InfoItem';
 
-
-
 const ContactPage = () => {
   const [formState, setFormState] = useState<ContactFormState>(INITIAL_FORM_STATE);
   const [submitted, setSubmitted] = useState(false);
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    setFormState((prev) => ({
+    setFormState(prev => ({
       ...prev,
       [name]: value,
     }));
@@ -173,7 +178,7 @@ const ContactPage = () => {
 
   const handleTextareaChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormState((prev) => ({
+    setFormState(prev => ({
       ...prev,
       [name]: value,
     }));
@@ -181,7 +186,7 @@ const ContactPage = () => {
 
   const handleSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const { name, value } = e.target;
-    setFormState((prev) => ({
+    setFormState(prev => ({
       ...prev,
       [name]: value,
     }));
@@ -318,8 +323,14 @@ const ContactPage = () => {
               </div>
             </section>
 
-            <aside className="flex flex-col gap-6 sm:gap-8 lg:col-span-2" aria-label="Contact details">
-              <section className="rounded-3xl bg-slate-50 p-6 sm:p-8" aria-labelledby="contact-details-title">
+            <aside
+              className="flex flex-col gap-6 sm:gap-8 lg:col-span-2"
+              aria-label="Contact details"
+            >
+              <section
+                className="rounded-3xl bg-slate-50 p-6 sm:p-8"
+                aria-labelledby="contact-details-title"
+              >
                 <h2 id="contact-details-title" className="mb-6 text-xl font-black text-slate-900">
                   Find Us
                 </h2>
@@ -333,7 +344,7 @@ const ContactPage = () => {
 
                   <InfoItem Icon={Clock} title="Hours">
                     <ul className="space-y-1">
-                      {HOURS.map((h) => (
+                      {HOURS.map(h => (
                         <li
                           key={h.day}
                           className="flex justify-between gap-4 text-sm text-slate-500"
@@ -347,7 +358,10 @@ const ContactPage = () => {
                 </div>
               </section>
 
-              <section className="rounded-3xl bg-slate-900 p-6 text-white sm:p-8" aria-labelledby="social-title">
+              <section
+                className="rounded-3xl bg-slate-900 p-6 text-white sm:p-8"
+                aria-labelledby="social-title"
+              >
                 <h2 id="social-title" className="mb-3 text-xl font-black">
                   Follow Along
                 </h2>

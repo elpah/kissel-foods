@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import { memo } from "react";
+import { motion } from 'framer-motion';
+import { memo } from 'react';
 
 type TeamCardProps = {
   name: string;
@@ -34,4 +34,4 @@ const AboutTeamCard = memo(({ name, role, bio, image, index }: TeamCardProps) =>
   </motion.li>
 ));
 
-export default AboutTeamCard
+export default AboutTeamCard;

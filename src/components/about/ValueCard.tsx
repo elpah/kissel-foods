@@ -1,5 +1,5 @@
-import { LucideIcon } from "lucide-react";
-import { memo } from "react";
+import { LucideIcon } from 'lucide-react';
+import { memo } from 'react';
 
 type ValueCardProps = {
   Icon: LucideIcon;
@@ -23,4 +23,4 @@ const ValueCard = memo(({ Icon, iconClassName, bgClassName, title, desc }: Value
   </article>
 ));
 
-export default ValueCard
+export default ValueCard;

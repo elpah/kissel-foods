@@ -14,7 +14,7 @@ const CategoryFilter = ({ categories, activeCategory, onChange }: CategoryFilter
       aria-label="Menu categories"
     >
       <div className="flex w-max min-w-full gap-3 sm:justify-center">
-        {categories.map((category) => {
+        {categories.map(category => {
           const isActive = activeCategory === category;
 
           return (
@@ -39,4 +39,4 @@ const CategoryFilter = ({ categories, activeCategory, onChange }: CategoryFilter
   </div>
 );
 
-export default CategoryFilter
+export default CategoryFilter;

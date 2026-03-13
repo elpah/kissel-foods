@@ -1,4 +1,4 @@
-import { Calendar, Clock, Users } from "lucide-react";
+import { Calendar, Clock, Users } from 'lucide-react';
 
 export const RESERVATION_DETAILS = [
   {

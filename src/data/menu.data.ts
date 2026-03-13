@@ -35,8 +35,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     id: 'm4',
     name: 'Kelewele',
     price: 'GH₵30.00',
-    description:
-      'Spicy fried ripe plantain cubes seasoned with ginger, garlic, and chili.',
+    description: 'Spicy fried ripe plantain cubes seasoned with ginger, garlic, and chili.',
     category: 'Appetizers',
     image:
       'https://images.unsplash.com/photo-1625943555401-02c3a4b37efe?auto=format&fit=crop&q=80&w=800',
@@ -65,8 +64,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     id: 'm7',
     name: 'Sobolo Drink',
     price: 'GH₵15.00',
-    description:
-      'Refreshing hibiscus drink brewed with ginger, cloves, and pineapple.',
+    description: 'Refreshing hibiscus drink brewed with ginger, cloves, and pineapple.',
     category: 'Desserts',
     image:
       'https://images.unsplash.com/photo-1615485925600-97237c4fc1ec?auto=format&fit=crop&q=80&w=800',
@@ -75,8 +73,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     id: 'm8',
     name: 'Bofrot (Puff Puff)',
     price: 'GH₵20.00',
-    description:
-      'Soft deep-fried dough balls lightly sweetened and served warm.',
+    description: 'Soft deep-fried dough balls lightly sweetened and served warm.',
     category: 'Desserts',
     image:
       'https://images.unsplash.com/photo-1612198790700-0ff08cb726c5?auto=format&fit=crop&q=80&w=800',
@@ -85,8 +82,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     id: 'm9',
     name: 'Coconut Rice Pudding',
     price: 'GH₵25.00',
-    description:
-      'Creamy rice pudding infused with coconut milk and warm spices.',
+    description: 'Creamy rice pudding infused with coconut milk and warm spices.',
     category: 'Desserts',
     image:
       'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&q=80&w=800',

@@ -7,4 +7,5 @@ export type SitelinkType = {
   desc1: string;
   desc2: string;
   Icon: LucideIcon;
+  index?: number;
 };

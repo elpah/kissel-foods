@@ -1,4 +1,4 @@
-import { LucideIcon } from "lucide-react";
+import { LucideIcon } from 'lucide-react';
 
 type SocialButtonProps = {
   href: string;
@@ -7,12 +7,7 @@ type SocialButtonProps = {
   color?: string;
 };
 
-const SocialButton = ({
-  href,
-  label,
-  Icon,
-  color = "text-gray-200",
-}: SocialButtonProps) => (
+const SocialButton = ({ href, label, Icon, color = 'text-gray-200' }: SocialButtonProps) => (
   <a
     href={href}
     aria-label={label}

@@ -1,7 +1,7 @@
-import { MENU_ITEMS } from "@/data/menu.data";
-import { motion } from "framer-motion";
-import { ChevronRight } from "lucide-react";
-import { memo } from "react";
+import { MENU_ITEMS } from '@/data/menu.data';
+import { motion } from 'framer-motion';
+import { ChevronRight } from 'lucide-react';
+import { memo } from 'react';
 
 type MenuCardProps = {
   item: (typeof MENU_ITEMS)[number];
@@ -33,9 +33,7 @@ const MenuCard = memo(({ item }: MenuCardProps) => (
         <h3 className="text-lg font-bold text-slate-900 sm:text-xl">{item.name}</h3>
       </div>
 
-      <p className="mb-4 text-sm leading-6 text-slate-600 sm:text-[15px]">
-        {item.description}
-      </p>
+      <p className="mb-4 text-sm leading-6 text-slate-600 sm:text-[15px]">{item.description}</p>
 
       <div className="flex items-center justify-between gap-3">
         <span className="rounded bg-amber-50 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-amber-700 sm:text-xs">
@@ -55,5 +53,4 @@ const MenuCard = memo(({ item }: MenuCardProps) => (
   </motion.article>
 ));
 
-
-export default MenuCard
+export default MenuCard;

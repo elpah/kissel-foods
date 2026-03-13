@@ -23,12 +23,8 @@ const MenuPage = () => {
         image="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=2000"
       />
 
-      <section
-        className="py-16 sm:py-20 lg:py-24"
-        aria-labelledby="menu-section-title"
-      >
+      <section className="py-16 sm:py-20 lg:py-24" aria-labelledby="menu-section-title">
         <div className="container mx-auto px-6">
-
           <SectionHeading
             title="Explore Our Dishes"
             description="Browse through our handcrafted menu prepared with seasonal ingredients."
@@ -62,15 +58,11 @@ const MenuPage = () => {
             })}
           </div>
 
-          <motion.div
-            layout
-            className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
-          >
-              {filteredMenu.map(item => (
-                <MenuCard key={item.id} item={item} />
-              ))}
+          <motion.div layout className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {filteredMenu.map(item => (
+              <MenuCard key={item.id} item={item} />
+            ))}
           </motion.div>
-
         </div>
       </section>
     </main>

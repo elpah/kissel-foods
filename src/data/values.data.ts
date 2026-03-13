@@ -1,5 +1,5 @@
-import { Leaf,Award, Heart } from "lucide-react";
-export  const VALUES = [
+import { Leaf, Award, Heart } from 'lucide-react';
+export const VALUES = [
   {
     Icon: Leaf,
     iconClassName: 'text-green-600',
