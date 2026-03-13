@@ -4,7 +4,7 @@ import SectionHeading from '@/components/shared/SectionHeading';
 import { MENU_ITEMS } from '@/data/menu.data';
 import { SITELINKS } from '@/data/siteLinks.data';
 import { SitelinkType } from '@/types/siteLink.type';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ChevronRight, Phone, MessageCircle } from 'lucide-react';
 import { useMemo, useState, memo } from 'react';
 import { Link } from 'react-router-dom';
