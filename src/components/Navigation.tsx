@@ -58,7 +58,7 @@ const Navigation = () => {
 
           <div className="hidden md:flex items-center gap-8">
             <ul className="flex items-center gap-8">
-              {SITELINKS.slice(0, 5).map(link => (
+              {SITELINKS.map(link => (
                 <li key={link.label}>
                   <NavLink
                     to={link.page}
