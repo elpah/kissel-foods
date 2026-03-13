@@ -217,11 +217,9 @@ const HomePage = () => {
           />
 
           <motion.div layout className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <AnimatePresence mode="popLayout">
               {filteredMenu.map(item => (
                 <MenuCard key={item.id} item={item} />
               ))}
-            </AnimatePresence>
           </motion.div>
 
           <div className="mt-12 text-center sm:mt-16">
@@ -260,6 +258,7 @@ const HomePage = () => {
           <SectionHeading
             title="Ready for an Unforgettable Dining Experience?"
             description="Book your table now or contact us for catering services for your next event."
+            color='text-slate-200'
           />
 
           <div className="flex flex-col justify-center gap-4 sm:flex-row sm:gap-6">

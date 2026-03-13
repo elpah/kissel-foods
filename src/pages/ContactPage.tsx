@@ -1,5 +1,6 @@
 import PageHero from '@/components/PageHero';
 import SectionHeading from '@/components/shared/SectionHeading';
+import SocialButton from '@/components/shared/SocialButton';
 import { HOURS } from '@/data/hours.data';
 import { motion } from 'framer-motion';
 import {
@@ -156,24 +157,7 @@ const InfoItem = memo(({ Icon, title, children }: InfoItemProps) => (
 
 InfoItem.displayName = 'InfoItem';
 
-type SocialButtonProps = {
-  href: string;
-  label: string;
-  Icon: LucideIcon;
-};
 
-const SocialButton = ({ href, label, Icon }: SocialButtonProps) => (
-  <a
-    href={href}
-    aria-label={label}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-2 rounded-xl bg-white/10 px-4 py-3 text-sm font-bold transition-all hover:bg-amber-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
-  >
-    <Icon className="h-5 w-5" />
-    <span>{label}</span>
-  </a>
-);
 
 const ContactPage = () => {
   const [formState, setFormState] = useState<ContactFormState>(INITIAL_FORM_STATE);
