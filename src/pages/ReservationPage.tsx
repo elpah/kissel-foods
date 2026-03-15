@@ -43,7 +43,7 @@ const ReservationPage = () => (
               actionText="Chat Now →"
               Icon={MessageCircle}
               variant="green"
-              external
+              // external
               delay={0.2}
             />
           </div>

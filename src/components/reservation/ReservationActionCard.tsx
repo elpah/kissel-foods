@@ -35,9 +35,9 @@ const ReservationActionCard = memo(
       }`}
     >
       <div
-        className={`mb-6 flex h-20 w-20 items-center justify-center rounded-2xl ${
+        className={`mb-6 flex h-20 w-20 items-center justify-center rounded-2xl mx-auto ${
           variant === 'green'
-            ? 'mx-auto bg-white/20 group-hover:scale-110'
+            ? 'bg-white/20 group-hover:scale-110'
             : 'bg-amber-500 text-white shadow-lg shadow-amber-500/30'
         } transition-transform`}
         aria-hidden="true"
