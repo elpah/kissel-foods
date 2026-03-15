@@ -80,9 +80,7 @@ const Navigation = () => {
 
           <button
             type="button"
-            className={`md:hidden p-2 rounded-lg ${
-              isTransparent ? 'text-white' : 'text-slate-900'
-            }`}
+            className="md:hidden p-2 rounded-lg text-slate-900"
             onClick={() => setIsMenuOpen(prev => !prev)}
             aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={isMenuOpen}
@@ -108,15 +106,7 @@ const Navigation = () => {
           >
             <div className="flex justify-between items-center mb-10">
               <Link to="/" className="flex items-center gap-2.5" aria-label="Go to homepage">
-                <span>LOGO</span>
-                <div className="flex flex-col leading-none">
-                  <span className="text-lg font-black text-slate-900 leading-none">
-                    KISSEL FOODS
-                  </span>
-                  <span className="text-[9px] italic font-medium text-slate-400 tracking-wide leading-none mt-0.5">
-                    ...Your Ideal Taste!
-                  </span>
-                </div>
+                <img src="/images/kissel_logo.png" alt="LOGO" className="h-auto w-20  " />
               </Link>
 
               <button
@@ -139,7 +129,7 @@ const Navigation = () => {
                       <NavLink
                         to={link.page}
                         className={({ isActive }) =>
-                          `group flex items-center justify-between rounded-2xl px-4 py-4 transition-all ${
+                          `group flex items-center justify-between rounded-xl  py-2 transition-all ${
                             isActive
                               ? 'bg-amber-50 text-amber-600'
                               : 'text-slate-900 hover:bg-slate-50'
