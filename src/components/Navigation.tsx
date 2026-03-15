@@ -60,8 +60,8 @@ const Navigation = () => {
                   <NavLink
                     to={link.page}
                     className={({ isActive }) =>
-                      `text-sm font-semibold hover:text-amber-500 transition-colors text-slate-600 ${
-                        isActive ? 'text-amber-500' : isTransparent
+                      `text-sm font-semibold transition-colors ${
+                        isActive ? 'text-amber-500' : 'text-slate-600 hover:text-amber-500'
                       }`
                     }
                   >
