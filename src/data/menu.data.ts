@@ -7,8 +7,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵70.00',
     description: 'Flavorful fried rice mixed with vegetables and spices.',
     category: 'Main',
-    image:
-      'https://images.unsplash.com/photo-1604908177522-429a5c5d2a19?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/assorted-friedrice.webp',
   },
   {
     id: 'k2',
@@ -16,8 +15,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵55.00',
     description: 'Classic Ghanaian jollof rice cooked in rich tomato sauce.',
     category: 'Main',
-    image:
-      'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/jollof-rice.webp',
   },
   {
     id: 'k3',
@@ -25,8 +23,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵50.00',
     description: 'Savory fried rice with vegetables and spices.',
     category: 'Main',
-    image:
-      'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/friedrice.webp',
   },
   {
     id: 'k4',
@@ -43,8 +40,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵55.00',
     description: 'Traditional banku served with grilled tilapia and pepper sauce.',
     category: 'Main',
-    image:
-      'https://images.unsplash.com/photo-1625943555419-56a2cb596640?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/banku-tilapia.webp',
   },
   {
     id: 'k6',
@@ -52,8 +48,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵40.00',
     description: 'Banku served with delicious okro stew.',
     category: 'Main',
-    image:
-      'https://images.unsplash.com/photo-1633436375153-d7045cce8f8b?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/banku-okro.webp',
   },
   {
     id: 'k7',
@@ -61,8 +56,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵40.00',
     description: 'Rich beans stew served with tasty sides.',
     category: 'Main',
-    image:
-      'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/beans.webp',
   },
   {
     id: 'k8',
@@ -70,8 +64,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵40.00',
     description: 'Soft boiled yam slices served warm.',
     category: 'Main',
-    image:
-      'https://images.unsplash.com/photo-1625943555401-02c3a4b37efe?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/yam-kontomire.webp',
   },
   {
     id: 'k9',
@@ -79,8 +72,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵50.00',
     description: 'Garri (eba) served with rich egusi soup.',
     category: 'Main',
-    image:
-      'https://images.unsplash.com/photo-1633436375207-2fb9a0c9a7e5?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/eba.webp',
   },
 
   // Drinks
@@ -99,8 +91,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'Small GH₵8.00 / Large GH₵15.00',
     description: 'Fresh pineapple juice served chilled.',
     category: 'Drinks',
-    image:
-      'https://images.unsplash.com/photo-1577234286642-fc512a5f8f11?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/pineapple-juice.webp',
   },
 
   // Pastries
@@ -128,8 +119,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵7.00',
     description: 'Soft and fluffy cupcake treat.',
     category: 'Pastries',
-    image:
-      'https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/cup-cake.webp',
   },
   {
     id: 'k15',
@@ -137,8 +127,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵20.00 / GH₵30.00 / GH₵40.00',
     description: 'Delicious layered cake available in multiple sizes.',
     category: 'Pastries',
-    image:
-      'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/cake.webp',
   },
   {
     id: 'k16',
@@ -146,8 +135,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵8.00 / GH₵10.00',
     description: 'Soft chocolate filled pastry roll.',
     category: 'Pastries',
-    image:
-      'https://images.unsplash.com/photo-1605475128208-01b9a2b805d6?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/chocolate-roll.webp',
   },
   {
     id: 'k17',
@@ -155,8 +143,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵20.00',
     description: 'Moist banana flavored bread loaf.',
     category: 'Pastries',
-    image:
-      'https://images.unsplash.com/photo-1589307004394-9e2b75b5c8b2?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/banana-bread.webp',
   },
   {
     id: 'k18',
@@ -164,8 +151,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵20.00',
     description: 'Sweet bread infused with coconut flavor.',
     category: 'Pastries',
-    image:
-      'https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/coconut-bread.webp',
   },
 
   // Pizza
@@ -175,8 +161,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'Small GH₵90 / Medium GH₵130 / Large GH₵150',
     description: 'Flavorful chicken pizza with a spicy kick.',
     category: 'Pizza',
-    image:
-      'https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/blaze-pizza.webp',
   },
   {
     id: 'k20',
@@ -193,8 +178,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'Small GH₵90 / Medium GH₵130 / Large GH₵150',
     description: 'Loaded with juicy beef and rich flavors.',
     category: 'Pizza',
-    image:
-      'https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/beef-pizza.webp',
   },
   {
     id: 'k22',
