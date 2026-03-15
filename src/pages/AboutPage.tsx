@@ -61,9 +61,9 @@ const AboutPage = () => (
 
             <div className="mt-6 space-y-5">
               <p className="text-sm leading-7 text-slate-600 sm:text-base">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quos unde distinctio
-                error quae accusantium repudiandae accusamus possimus blanditiis laboriosam sit amet
-                ullam veniam, earum quaerat totam reiciendis eos ratione.
+                Kissel is a home of African and Continental dishes with special touch of Excellence.
+                The focus of Kissel foods is that every customer should find an ideal taste of meals
+                away from home.
               </p>
 
               <p className="text-sm leading-7 text-slate-600 sm:text-base">
