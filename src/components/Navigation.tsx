@@ -16,7 +16,6 @@ const Navigation = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
-
     handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -45,8 +44,8 @@ const Navigation = () => {
     <>
       <nav
         aria-label="Primary"
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled || !isHome ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-white/30 py-4'
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90  ${
+          scrolled || !isHome ? 'backdrop-blur-md shadow-sm py-3' : 'py-4'
         }`}
       >
         <div className="container mx-auto px-6 flex items-center justify-between">
@@ -61,12 +60,8 @@ const Navigation = () => {
                   <NavLink
                     to={link.page}
                     className={({ isActive }) =>
-                      `text-sm font-semibold hover:text-amber-500 transition-colors ${
-                        isActive
-                          ? 'text-amber-500'
-                          : isTransparent
-                            ? 'text-white/90'
-                            : 'text-slate-600'
+                      `text-sm font-semibold hover:text-amber-500 transition-colors text-slate-600 ${
+                        isActive ? 'text-amber-500' : isTransparent
                       }`
                     }
                   >
@@ -75,7 +70,6 @@ const Navigation = () => {
                 </li>
               ))}
             </ul>
-
             <Link
               to="/reservations"
               className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-2.5 rounded-full font-bold transition-all shadow-md hover:shadow-lg active:scale-95"
