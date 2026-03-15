@@ -7,14 +7,28 @@ type MenuCardProps = {
   item: (typeof MENU_ITEMS)[number];
 };
 
+const cardVariants = {
+  hidden: {
+    opacity: 0,
+    y: 24,
+    scale: 0.97,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.35,
+      ease: 'easeOut',
+    },
+  },
+};
+
 const MenuCard = memo(({ item }: MenuCardProps) => (
   <motion.article
-    layout
-    initial={{ opacity: 0, y: 18 }}
-    animate={{ opacity: 1, y: 0 }}
-    exit={{ opacity: 0, scale: 0.96 }}
-    transition={{ duration: 0.25 }}
-    className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+    variants={cardVariants}
+    whileHover={{ y: -4 }}
+    className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow duration-300 hover:shadow-xl"
   >
     <div className="relative h-52 overflow-hidden sm:h-56">
       <img
@@ -33,7 +47,9 @@ const MenuCard = memo(({ item }: MenuCardProps) => (
         <h3 className="text-lg font-bold text-slate-900 sm:text-xl">{item.name}</h3>
       </div>
 
-      <p className="mb-4 text-sm leading-6 text-slate-600 sm:text-[15px]">{item.description}</p>
+      <p className="mb-4 text-sm leading-6 text-slate-600 sm:text-[15px]">
+        {item.description}
+      </p>
 
       <div className="flex items-center justify-between gap-3">
         <span className="rounded bg-amber-50 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-amber-700 sm:text-xs">
@@ -52,5 +68,7 @@ const MenuCard = memo(({ item }: MenuCardProps) => (
     </div>
   </motion.article>
 ));
+
+MenuCard.displayName = 'MenuCard';
 
 export default MenuCard;

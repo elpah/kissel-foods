@@ -3,13 +3,24 @@ import PageHero from '@/components/PageHero';
 import MenuCard from '@/components/shared/MenuCard';
 import SectionHeading from '@/components/shared/SectionHeading';
 import { MENU_ITEMS } from '@/data/menu.data';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { useMemo, useState } from 'react';
 
 const CATEGORIES: Category[] = ['All', 'Appetizers', 'Main Course', 'Desserts'];
 
+const containerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.12,
+      delayChildren: 0.05,
+    },
+  },
+};
+
 const MenuPage = () => {
   const [activeCategory, setActiveCategory] = useState<Category>('All');
+
   const filteredMenu = useMemo(() => {
     if (activeCategory === 'All') return MENU_ITEMS;
     return MENU_ITEMS.filter(item => item.category === activeCategory);
@@ -29,17 +40,27 @@ const MenuPage = () => {
             title="Explore Our Dishes"
             description="Browse through our handcrafted menu prepared with seasonal ingredients."
           />
+
           <CategoryFilter
             categories={CATEGORIES}
             activeCategory={activeCategory}
             onChange={setActiveCategory}
           />
 
-          <motion.div layout className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {filteredMenu.map(item => (
-              <MenuCard key={item.id} item={item} />
-            ))}
-          </motion.div>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeCategory}
+              variants={containerVariants}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+            >
+              {filteredMenu.map(item => (
+                <MenuCard key={item.id} item={item} />
+              ))}
+            </motion.div>
+          </AnimatePresence>
         </div>
       </section>
     </main>
