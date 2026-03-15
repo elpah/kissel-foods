@@ -1,8 +1,10 @@
+import { Category } from './categories.type';
+
 export type MenuItemType = {
   id: string;
   name: string;
   price: string;
   description: string;
-  category: 'Appetizers' | 'Main Course' | 'Desserts' | 'Specials';
+  category: Category;
   image: string;
 };

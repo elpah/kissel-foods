@@ -1,22 +1,15 @@
-import CategoryFilter, { Category } from '@/components/home/CategoryFilter';
+import CategoryFilter from '@/components/home/CategoryFilter';
 import MenuCard from '@/components/shared/MenuCard';
 import SectionHeading from '@/components/shared/SectionHeading';
+import { CATEGORIES } from '@/data/categories.data';
 import { MENU_ITEMS } from '@/data/menu.data';
 import { SITELINKS } from '@/data/siteLinks.data';
+import { Category } from '@/types/categories.type';
 import { SitelinkType } from '@/types/siteLink.type';
 import { motion } from 'framer-motion';
 import { ChevronRight, Phone, MessageCircle } from 'lucide-react';
 import { useMemo, useState, memo } from 'react';
 import { Link } from 'react-router-dom';
-
-const CATEGORIES: Category[] = ['All', 'Appetizers', 'Main Course', 'Desserts'];
-
-const fadeUp = {
-  initial: { opacity: 0, y: 24 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true, amount: 0.2 },
-  transition: { duration: 0.5 },
-};
 
 type PrimaryLinkButtonProps = {
   to: string;

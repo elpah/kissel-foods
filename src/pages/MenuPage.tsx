@@ -1,12 +1,12 @@
-import CategoryFilter, { Category } from '@/components/home/CategoryFilter';
+import CategoryFilter from '@/components/home/CategoryFilter';
 import PageHero from '@/components/PageHero';
 import MenuCard from '@/components/shared/MenuCard';
 import SectionHeading from '@/components/shared/SectionHeading';
+import { CATEGORIES } from '@/data/categories.data';
 import { MENU_ITEMS } from '@/data/menu.data';
+import { Category } from '@/types/categories.type';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useMemo, useState } from 'react';
-
-const CATEGORIES: Category[] = ['All', 'Appetizers', 'Main Course', 'Desserts'];
 
 const containerVariants = {
   hidden: {},

@@ -1,4 +1,4 @@
-export type Category = 'All' | 'Appetizers' | 'Main Course' | 'Desserts';
+import { Category } from '@/types/categories.type';
 
 type CategoryFilterProps = {
   categories: readonly Category[];
