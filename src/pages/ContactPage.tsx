@@ -207,7 +207,7 @@ const ContactPage = () => {
       <PageHero
         title="Contact Us"
         subtitle="We’d love to hear from you. Reach out any time."
-        image="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=2000"
+        image="/images/cover_images/contact-hero.webp"
       />
 
       <section className="py-16 sm:py-20 lg:py-24" aria-labelledby="contact-section-title">

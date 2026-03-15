@@ -1,5 +1,5 @@
 export const HOURS = [
-  { day: 'Monday - Thursday', time: '11am - 10pm' },
-  { day: 'Friday - Saturday', time: '11am - 12am' },
-  { day: 'Sunday', time: '12pm - 9pm' },
+  { day: 'Sundays - Mondays', time: '10am - 10pm' },
+  { day: 'Tuesdays - Saturday', time: '9am - 10pm' },
+  // { day: 'Sunday', time: '12pm - 9pm' },
 ];

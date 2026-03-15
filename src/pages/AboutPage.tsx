@@ -47,9 +47,8 @@ const AboutPage = () => (
     <PageHero
       title="Our Story"
       subtitle="Passion, flavor, and community — the heart of Kissel Foods."
-      image="https://images.unsplash.com/photo-1550966842-2849a220276b?auto=format&fit=crop&q=80&w=2000"
+      image="/images/cover_images/about-hero.webp"
     />
-
     <section className="py-16 sm:py-20 lg:py-24" aria-labelledby="about-story-title">
       <div className="container mx-auto px-6">
         <div className="mb-20 grid grid-cols-1 items-center gap-12 lg:mb-24 lg:grid-cols-2 lg:gap-16">

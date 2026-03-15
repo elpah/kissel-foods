@@ -4,6 +4,7 @@ import SectionHeading from '@/components/shared/SectionHeading';
 import { CATEGORIES } from '@/data/categories.data';
 import { MENU_ITEMS } from '@/data/menu.data';
 import { SITELINKS } from '@/data/siteLinks.data';
+import { useIsMobile } from '@/hooks/use-mobile';
 import { Category } from '@/types/categories.type';
 import { SitelinkType } from '@/types/siteLink.type';
 import { motion } from 'framer-motion';
@@ -109,17 +110,22 @@ const CtaCard = ({ to, icon, children, variant = 'light' }: CtaCardProps) => (
 
 const HomePage = () => {
   const [activeCategory, setActiveCategory] = useState<Category>('All');
+  const isMobile = useIsMobile();
 
   const filteredMenu = useMemo(() => {
     if (activeCategory === 'All') return MENU_ITEMS;
     return MENU_ITEMS.filter(item => item.category === activeCategory);
   }, [activeCategory]);
 
+  const heroImage = isMobile
+    ? '/images/cover_images/home-hero-mobile.webp'
+    : '/images/cover_images/home-hero.webp';
+
   return (
     <main>
       <header className="relative min-h-screen overflow-hidden">
         <img
-        src="/images/cover_images/home-hero.webp"
+          src={heroImage}
           alt="Home Cover Image"
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover"

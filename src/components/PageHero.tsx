@@ -13,7 +13,10 @@ const fadeUp = {
 
 const PageHero = ({ title, subtitle, image }: PageHeroProps) => {
   return (
-    <header className="relative h-72 overflow-hidden md:h-96" aria-labelledby="page-hero-title">
+    <header
+      className="relative mt-15 h-80 overflow-hidden md:h-96 lg:h-120"
+      aria-labelledby="page-hero-title"
+    >
       <figure className="absolute inset-0">
         <img src={image} alt="" aria-hidden="true" className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-black/55" />

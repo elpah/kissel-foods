@@ -12,7 +12,7 @@ const CateringPage = () => (
     <PageHero
       title="Catering"
       subtitle="Bringing the Kissel Foods experience to your special events."
-      image="https://images.unsplash.com/photo-1530062845289-9109b2c9c836?auto=format&fit=crop&q=80&w=2000"
+      image="images/cover_images/menu-hero.webp"
     />
 
     <section className="py-16 sm:py-20 lg:py-24" aria-labelledby="catering-packages-title">

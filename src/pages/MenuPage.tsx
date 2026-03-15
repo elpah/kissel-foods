@@ -31,7 +31,7 @@ const MenuPage = () => {
       <PageHero
         title="Our Menu"
         subtitle="Handcrafted dishes made with the finest seasonal ingredients."
-        image="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=2000"
+        image="images/cover_images/menu-hero.webp"
       />
 
       <section className="py-16 sm:py-20 lg:py-24" aria-labelledby="menu-section-title">
