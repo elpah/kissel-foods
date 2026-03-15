@@ -1,4 +1,5 @@
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from '@vercel/analytics/react';
 import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import { lazy, Suspense, useEffect } from 'react';
@@ -39,6 +40,7 @@ function App() {
           </Routes>
         </Suspense>
         <SpeedInsights />
+        <Analytics />
       </div>
       <Footer />
     </div>
