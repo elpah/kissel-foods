@@ -119,8 +119,8 @@ const HomePage = () => {
     <main>
       <header className="relative min-h-screen overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=2000"
-          alt=""
+        src="/images/cover_images/home-hero.webp"
+          alt="Home Cover Image"
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover"
         />
