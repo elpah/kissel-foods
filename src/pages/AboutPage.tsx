@@ -60,15 +60,34 @@ const AboutPage = () => (
 
             <div className="mt-6 space-y-5">
               <p className="text-sm leading-7 text-slate-600 sm:text-base">
-                Kissel is a home of African and Continental dishes with special touch of Excellence.
-                The focus of Kissel foods is that every customer should find an ideal taste of meals
-                away from home.
+                Kissel Foods is a home of African and Continental dishes with special touch of
+                Excellence. The focus of Kissel foods is that every customer should find an ideal
+                taste of meals away from home. Beyond a restaurant; it's a culinary journey through
+                the rich and diverse flavors of Africa and the continent, with a dash of excellence.
+                Our mission is to provide an unforgettable dining experience that transports our
+                customers to the heart of Africa, where every meal is a celebration of tradition,
+                culture, and flavor. At Kissel Foods, we're passionate about serving authentic
+                African and Continental dishes with a unique twist that sets us apart from the rest.
               </p>
 
               <p className="text-sm leading-7 text-slate-600 sm:text-base">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quos unde distinctio
-                error quae accusantium repudiandae accusamus possimus blanditiis laboriosam sit amet
-                ullam veniam, earum quaerat totam reiciendis eos ratione.
+                Our chefs are dedicated to using only the freshest ingredients, carefully selected
+                to ensure that every bite is a burst of flavor and aroma that will leave you wanting
+                more. Whether you're craving the spicy kick of jollof rice, the comforting warmth of
+                Egusi, banku with Tilapia or the rich flavors of our slow-cooked stews, our menu is
+                designed to take you on a culinary adventure that will leave you feeling satisfied
+                and eager to return. Our focus is on providing an ideal taste of meals away from
+                home, where every customer feels like family. We believe that food is a universal
+                language, and we strive to create a welcoming atmosphere that bridges cultures and
+                brings people together. From our friendly staff to our carefully crafted menu, every
+                aspect of Kissel Foods is designed to make you feel at home.
+              </p>
+              <p className="text-sm leading-7 text-slate-600 sm:text-base">
+                Whether you're a foodie looking to try something new, a busy professional seeking a
+                delicious and authentic meal, or a family looking for a warm and welcoming space to
+                share a meal together, Kissel Foods is the perfect destination. Come and experience
+                the excellence that sets us apart, and discover why we're more than just a
+                restaurant. We are a taste of Africa and the continent, right in your neighborhood.
               </p>
             </div>
 

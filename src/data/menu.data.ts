@@ -19,7 +19,7 @@ export const MENU_ITEMS: MenuItemType[] = [
   },
   {
     id: 'k3',
-    name: 'Fried Rice',
+    name: 'Fried Rice and Chicken',
     price: 'GH₵50.00',
     description: 'Savory fried rice with vegetables and spices.',
     category: 'Main',
@@ -27,8 +27,8 @@ export const MENU_ITEMS: MenuItemType[] = [
   },
   {
     id: 'k4',
-    name: 'Yam Chips',
-    price: 'GH₵40.00',
+    name: 'Yam Chips with Chicken',
+    price: 'GH₵50.00',
     description: 'Crispy deep-fried yam chips served hot.',
     category: 'Main',
     image: '/images/menu/yam-chips.webp',
@@ -36,15 +36,15 @@ export const MENU_ITEMS: MenuItemType[] = [
   {
     id: 'k5',
     name: 'Banku and Tilapia',
-    price: 'GH₵55.00',
+    price: 'GH₵70.00 upwards',
     description: 'Traditional banku served with grilled tilapia and pepper sauce.',
     category: 'Main',
     image: '/images/menu/banku-tilapia.webp',
   },
   {
     id: 'k6',
-    name: 'Okro Banku Classic',
-    price: 'GH₵40.00',
+    name: 'Banku with Okro Classic',
+    price: 'GH₵50.00',
     description: 'Banku served with delicious okro stew.',
     category: 'Main',
     image: '/images/menu/banku-okro.webp',
@@ -52,7 +52,7 @@ export const MENU_ITEMS: MenuItemType[] = [
   {
     id: 'k7',
     name: 'Beans Deluxe',
-    price: 'GH₵40.00',
+    price: 'GH₵50.00',
     description: 'Rich beans stew served with tasty sides.',
     category: 'Main',
     image: '/images/menu/beans.webp',
@@ -67,7 +67,7 @@ export const MENU_ITEMS: MenuItemType[] = [
   },
   {
     id: 'k9',
-    name: 'Eba with Egusi',
+    name: 'Egusi and Eba',
     price: 'GH₵50.00',
     description: 'Garri (eba) served with rich egusi soup.',
     category: 'Main',
@@ -78,7 +78,7 @@ export const MENU_ITEMS: MenuItemType[] = [
   {
     id: 'k10',
     name: 'Sobolo',
-    price: 'Small GH₵7.00 / Large GH₵12.00',
+    price: 'Small GH₵10.00 / Large GH₵12.00',
     description: 'Refreshing hibiscus drink brewed with spices.',
     category: 'Drinks',
 
@@ -87,7 +87,7 @@ export const MENU_ITEMS: MenuItemType[] = [
   {
     id: 'k11',
     name: 'Pineapple Juice',
-    price: 'Small GH₵8.00 / Large GH₵15.00',
+    price: ' GH₵20.00',
     description: 'Fresh pineapple juice served chilled.',
     category: 'Drinks',
     image: '/images/menu/pineapple-juice.webp',
@@ -97,7 +97,7 @@ export const MENU_ITEMS: MenuItemType[] = [
   {
     id: 'k12',
     name: 'Rock Buns',
-    price: 'GH₵7.00',
+    price: 'GH₵10.00',
     description: 'Crunchy sweet baked buns.',
     category: 'Pastries',
     image: '/images/menu/rock-buns.webp',
