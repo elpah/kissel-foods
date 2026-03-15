@@ -128,11 +128,11 @@ const Footer = () => {
 
             <ul className="space-y-4">
               <ContactItem
-                href="https://maps.google.com/?q=123 Kasoa, Accra near university"
+                href="https://www.google.com/maps/search/?api=1&query=GG74+3QF+Accra+Cape+Coast+Rd+Accra+Ghana"
                 Icon={MapPin}
                 external
               >
-                Kasoa, Accra near university
+                GG74+3QF, Accra - Cape Coast Rd, Accra, Ghana
               </ContactItem>
 
               <ContactItem href="tel:++233537947455" Icon={Phone}>

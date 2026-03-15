@@ -338,7 +338,7 @@ const ContactPage = () => {
                 <div className="space-y-6">
                   <InfoItem Icon={MapPin} title="Address">
                     <p className="text-sm leading-6 text-slate-500">
-                      Kasoa Street, near university
+                      GG74+3QF, Accra - Cape Coast Rd, Accra, Ghana
                     </p>
                   </InfoItem>
 
