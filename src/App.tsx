@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import { lazy, Suspense, useEffect } from 'react';
@@ -37,6 +38,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
+        <SpeedInsights />
       </div>
       <Footer />
     </div>
