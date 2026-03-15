@@ -6,6 +6,7 @@ import { MENU_ITEMS } from '@/data/menu.data';
 import { SITELINKS } from '@/data/siteLinks.data';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Category } from '@/types/categories.type';
+import { MenuItemType } from '@/types/menu.type';
 import { SitelinkType } from '@/types/siteLink.type';
 import { motion } from 'framer-motion';
 import { ChevronRight, Phone, MessageCircle } from 'lucide-react';
@@ -113,8 +114,16 @@ const HomePage = () => {
   const isMobile = useIsMobile();
 
   const filteredMenu = useMemo(() => {
-    if (activeCategory === 'All') return MENU_ITEMS;
-    return MENU_ITEMS.filter(item => item.category === activeCategory);
+    if (activeCategory !== 'All') {
+      return MENU_ITEMS.filter(item => item.category === activeCategory).slice(0, 6);
+    }
+
+    return [
+      ...MENU_ITEMS.filter(item => item.category === 'Main').slice(0, 2),
+      ...MENU_ITEMS.filter(item => item.category === 'Drinks').slice(0, 1),
+      ...MENU_ITEMS.filter(item => item.category === 'Pastries').slice(0, 1),
+      ...MENU_ITEMS.filter(item => item.category === 'Pizza').slice(0, 2),
+    ];
   }, [activeCategory]);
 
   const heroImage = isMobile
