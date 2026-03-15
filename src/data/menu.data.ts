@@ -31,8 +31,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵40.00',
     description: 'Crispy deep-fried yam chips served hot.',
     category: 'Main',
-    image:
-      'https://images.unsplash.com/photo-1585238342024-78d387f4a707?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/yam-chips.webp',
   },
   {
     id: 'k5',
@@ -82,8 +81,8 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'Small GH₵7.00 / Large GH₵12.00',
     description: 'Refreshing hibiscus drink brewed with spices.',
     category: 'Drinks',
-    image:
-      'https://images.unsplash.com/photo-1615485925600-97237c4fc1ec?auto=format&fit=crop&q=80&w=800',
+
+    image: '/images/menu/sobolo.webp',
   },
   {
     id: 'k11',
@@ -101,8 +100,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵7.00',
     description: 'Crunchy sweet baked buns.',
     category: 'Pastries',
-    image:
-      'https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/rock-buns.webp',
   },
   {
     id: 'k13',
@@ -110,8 +108,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵10.00',
     description: 'Flaky pastry filled with seasoned meat.',
     category: 'Pastries',
-    image:
-      'https://images.unsplash.com/photo-1625943555554-df5a2b907e1c?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/meat-pie.webp',
   },
   {
     id: 'k14',
@@ -169,8 +166,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'Small GH₵90 / Medium GH₵130 / Large GH₵150',
     description: 'Classic pepperoni pizza with a touch of heat.',
     category: 'Pizza',
-    image:
-      'https://images.unsplash.com/photo-1601924582975-7e8a2f32b7c5?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/pepperoni-pizza.webp',
   },
   {
     id: 'k21',
@@ -186,8 +182,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'Small GH₵90 / Medium GH₵130 / Large GH₵150',
     description: 'Delicious plant-based pizza for veggie lovers.',
     category: 'Pizza',
-    image:
-      'https://images.unsplash.com/photo-1548365328-8b849e1b1d4b?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/vegan-pizza.webp',
   },
   {
     id: 'k23',
@@ -195,7 +190,6 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'Medium GH₵160 / Large GH₵180 / Family GH₵250',
     description: 'Special blend of toppings for the ultimate pizza experience.',
     category: 'Pizza',
-    image:
-      'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=800',
+    image: '/images/menu/exotic-pizza.webp',
   },
 ];
