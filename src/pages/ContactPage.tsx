@@ -283,7 +283,7 @@ const ContactPage = () => {
                           type="tel"
                           value={formState.phone}
                           onChange={handleInputChange}
-                          placeholder="+1 (555) 000-0000"
+                          placeholder="+233 53 794 7455"
                         />
 
                         <SelectField

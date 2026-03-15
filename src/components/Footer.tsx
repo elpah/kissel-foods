@@ -135,8 +135,8 @@ const Footer = () => {
                 Kasoa, Accra near university
               </ContactItem>
 
-              <ContactItem href="tel:+233 000 0000" Icon={Phone}>
-                +233 000 0000
+              <ContactItem href="tel:++233537947455" Icon={Phone}>
+                +233 53 794 7455
               </ContactItem>
 
               <ContactItem href="mailto:info@kisselfoods.com" Icon={Mail}>

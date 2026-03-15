@@ -27,17 +27,17 @@ const ReservationPage = () => (
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
             <ReservationActionCard
-              href="tel:+15551234567"
+              href="tel:+233537947455"
               title="Call Us"
               description="Speak directly with our reservations team."
-              actionText="+1 (555) 123-4567"
+              actionText="+233 53 794 7455"
               Icon={Phone}
               variant="dark"
               delay={0.1}
             />
 
             <ReservationActionCard
-              href="https://wa.me/15551234567"
+              href="https://wa.me/233537947455"
               title="WhatsApp"
               description="Message us anytime, we respond fast."
               actionText="Chat Now →"

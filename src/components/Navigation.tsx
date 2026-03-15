@@ -173,7 +173,7 @@ const Navigation = () => {
 
               <div className="flex gap-3">
                 <a
-                  href="tel:+15551234567"
+                  href="tel:+233 53 794 7455"
                   className="flex-1 flex items-center justify-center gap-2 bg-slate-900 text-white py-4 rounded-xl font-bold"
                 >
                   <Phone className="w-5 h-5" />
@@ -181,7 +181,7 @@ const Navigation = () => {
                 </a>
 
                 <a
-                  href="https://wa.me/15551234567"
+                  href="https://wa.me/233537947455"
                   className="flex-1 flex items-center justify-center gap-2 bg-green-500 text-white py-4 rounded-xl font-bold"
                   target="_blank"
                   rel="noopener noreferrer"
