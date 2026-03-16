@@ -4,7 +4,7 @@
 
 https://kisselfoods.com
 
-A modern, responsive restaurant website built with **React**, **TypeScript**, **Vite**, **Tailwind CSS** **React Router** for navigation and **EmailJS** for email notifications. Features a beautiful multi-page SPA with smooth animations using **Framer Motion**.
+A modern, responsive restaurant website built with **React**, **TypeScript**, **Vite**, **Tailwind CSS**, **React Router** for navigation and **EmailJS** for email notifications. Features a beautiful multi-page SPA with smooth animations using **Framer Motion**.
 
 ## Features
 
@@ -20,13 +20,15 @@ A modern, responsive restaurant website built with **React**, **TypeScript**, **
 ```bash
 public/
 ├── images/
-│	├── cover_images/
-│ 	├── menu/
-|	└──Logo
+│   ├── cover_images/
+│   ├── menu/
+│   └── logo/
 ├── favicon.ico
+
 src/
 ├── components/
 │   ├── about/
+<<<<<<< HEAD
 |	├── catering/
 |	├──	home/
 |	├── reservation/
@@ -34,16 +36,25 @@ src/
 |	├──Footer.tsx
 |	├──Navigation.tsx
 |	└──PageHero.tsx
+=======
+│   ├── catering/
+│   ├── home/
+│   ├── reservation/
+│   ├── shared/
+│   ├── Footer.tsx
+│   ├── Navigation.tsx
+│   └── PageHero.tsx
+>>>>>>> d2e6cb0caf464c70760e58b871457c92f333cc79
 ├── data/
 ├── hooks/
-│   └── use-mobile.ts                  # Mobile breakpoint detection hook
+│   └── use-mobile.ts        # Mobile breakpoint detection hook
 ├── lib/
-│   └── utils.ts                       # Utility functions
+│   └── utils.ts             # Utility functions
 ├── pages/
 ├── types/
-├── App.tsx                            # Root component wrapper
-├── main.tsx                           # Application entry point
-└── index.css                          # Global styles & Tailwind setup
+├── App.tsx                  # Root component wrapper
+├── main.tsx                 # Application entry point
+└── index.css                # Global styles & Tailwind setup
 
 ```
 
