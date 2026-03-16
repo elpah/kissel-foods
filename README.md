@@ -28,15 +28,6 @@ public/
 src/
 ├── components/
 │   ├── about/
-<<<<<<< HEAD
-|	├── catering/
-|	├──	home/
-|	├── reservation/
-|	├── Shared/
-|	├──Footer.tsx
-|	├──Navigation.tsx
-|	└──PageHero.tsx
-=======
 │   ├── catering/
 │   ├── home/
 │   ├── reservation/
@@ -44,7 +35,6 @@ src/
 │   ├── Footer.tsx
 │   ├── Navigation.tsx
 │   └── PageHero.tsx
->>>>>>> d2e6cb0caf464c70760e58b871457c92f333cc79
 ├── data/
 ├── hooks/
 │   └── use-mobile.ts        # Mobile breakpoint detection hook
