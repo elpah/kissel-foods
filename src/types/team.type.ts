@@ -4,4 +4,5 @@ export type TeamMemberType = {
   role: string;
   bio: string;
   image: string;
+  theme?: string;
 };

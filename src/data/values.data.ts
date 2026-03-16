@@ -1,4 +1,4 @@
-import { Leaf, Award, Heart } from 'lucide-react';
+import { Leaf, ChefHat, Heart } from 'lucide-react';
 export const VALUES = [
   {
     Icon: Leaf,
@@ -8,11 +8,11 @@ export const VALUES = [
     desc: 'We partner with local farms and seasonal suppliers to ensure the freshest ingredients reach your plate.',
   },
   {
-    Icon: Award,
+    Icon: ChefHat,
     iconClassName: 'text-amber-600',
     bgClassName: 'bg-amber-50',
-    title: 'Award Winning',
-    desc: 'Recognized by the Culinary Arts Federation for three consecutive years as a top dining destination.',
+    title: 'True Flavour',
+    desc: 'Every plate celebrates the bold and comforting flavours of African and continental cuisine.',
   },
   {
     Icon: Heart,

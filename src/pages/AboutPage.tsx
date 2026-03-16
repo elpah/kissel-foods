@@ -1,15 +1,16 @@
 import AboutTeamCard from '@/components/about/AboutTeamCard';
+import LeadershipSection from '@/components/about/LeadershipSection';
 import ValueCard from '@/components/about/ValueCard';
 import PageHero from '@/components/PageHero';
 import SectionHeading from '@/components/shared/SectionHeading';
-import { TEAM_MEMBERS } from '@/data/team.data';
+import { LEADERSHIP, TEAM_MEMBERS } from '@/data/team.data';
 import { VALUES } from '@/data/values.data';
 import { motion } from 'framer-motion';
 import { memo } from 'react';
 
 const STORY_STATS = [
-  { value: '5+', label: 'Years in Service' },
-  { value: '400+', label: 'Happy Guests' },
+  { value: '9+', label: 'Years in Service' },
+  { value: '10000+', label: 'Happy Guests' },
 ] as const;
 
 const fadeLeft = {
@@ -53,41 +54,26 @@ const AboutPage = () => (
       <div className="container mx-auto px-6">
         <div className="mb-20 grid grid-cols-1 items-center gap-12 lg:mb-24 lg:grid-cols-2 lg:gap-16">
           <motion.div {...fadeLeft}>
-            <SectionHeading
-              eyebrow="Culinary Excellence"
-              title="Born From a Love of Food and Community"
-            />
+            <SectionHeading eyebrow="Authentic Flavours" title="A True Taste Away From Home" />
 
             <div className="mt-6 space-y-5">
               <p className="text-sm leading-7 text-slate-600 sm:text-base">
                 Kissel Foods is a home of African and Continental dishes with special touch of
                 Excellence. The focus of Kissel foods is that every customer should find an ideal
-                taste of meals away from home. Beyond a restaurant; it's a culinary journey through
-                the rich and diverse flavors of Africa and the continent, with a dash of excellence.
-                Our mission is to provide an unforgettable dining experience that transports our
-                customers to the heart of Africa, where every meal is a celebration of tradition,
-                culture, and flavor. At Kissel Foods, we're passionate about serving authentic
-                African and Continental dishes with a unique twist that sets us apart from the rest.
+                taste of meals away from home. Whether you are craving the spicy kick of jollof
+                rice, the comforting warmth of Egusi, banku with Tilapia or the rich flavors of our
+                slow-cooked stews, our menu is designed to take you on a culinary adventure that
+                will leave you feeling satisfied and eager to return.
               </p>
 
               <p className="text-sm leading-7 text-slate-600 sm:text-base">
-                Our chefs are dedicated to using only the freshest ingredients, carefully selected
-                to ensure that every bite is a burst of flavor and aroma that will leave you wanting
-                more. Whether you're craving the spicy kick of jollof rice, the comforting warmth of
-                Egusi, banku with Tilapia or the rich flavors of our slow-cooked stews, our menu is
-                designed to take you on a culinary adventure that will leave you feeling satisfied
-                and eager to return. Our focus is on providing an ideal taste of meals away from
-                home, where every customer feels like family. We believe that food is a universal
-                language, and we strive to create a welcoming atmosphere that bridges cultures and
-                brings people together. From our friendly staff to our carefully crafted menu, every
-                aspect of Kissel Foods is designed to make you feel at home.
-              </p>
-              <p className="text-sm leading-7 text-slate-600 sm:text-base">
-                Whether you're a foodie looking to try something new, a busy professional seeking a
-                delicious and authentic meal, or a family looking for a warm and welcoming space to
-                share a meal together, Kissel Foods is the perfect destination. Come and experience
-                the excellence that sets us apart, and discover why we're more than just a
-                restaurant. We are a taste of Africa and the continent, right in your neighborhood.
+                Our focus is on providing an ideal taste of meals away from home, where every
+                customer feels like family. Whether you're a foodie looking to try something new, a
+                busy professional seeking a delicious and authentic meal, or a family looking for a
+                warm and welcoming space to share a meal together, Kissel Foods is the perfect
+                destination. Come and experience the excellence that sets us apart, and discover why
+                we're more than just a restaurant. We are a taste of Africa and the continent, right
+                in your neighborhood.
               </p>
             </div>
 
@@ -100,7 +86,7 @@ const AboutPage = () => (
 
           <motion.div {...fadeRight} className="relative">
             <img
-              src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&q=80&w=800"
+              src="/images/cover_images/about.webp"
               alt="Kissel Foods kitchen team at work"
               loading="lazy"
               className="h-[360px] w-full rounded-3xl object-cover shadow-2xl sm:h-[420px] lg:h-[500px]"
@@ -130,17 +116,22 @@ const AboutPage = () => (
             ))}
           </div>
         </section>
-
+        <div className="mb-10 text-center sm:mb-12">
+          <SectionHeading
+            title="The People Behind the Food"
+            description="Meet the team that makes Kissel Foods extraordinary."
+            centered
+          />
+        </div>
+        <LeadershipSection members={LEADERSHIP} />
         <section aria-labelledby="team-title">
-          <div className="mb-10 text-center sm:mb-12">
-            <SectionHeading
-              title="Meet the Team"
-              description="The talented people who make every dish special."
-              centered
-            />
+          <div className=" flex items-center gap-3 mb-9">
+            <span aria-hidden="true" className="h-px w-8 bg-amber-500" />
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-amber-600">
+              Meet the Team
+            </p>
           </div>
-
-          <ul className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <ul className="grid grid-cols-1 gap-8">
             {TEAM_MEMBERS.map((member, index) => (
               <AboutTeamCard
                 key={member.id}
