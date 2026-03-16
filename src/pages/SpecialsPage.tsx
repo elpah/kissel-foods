@@ -1,6 +1,7 @@
 import PageHero from '@/components/PageHero';
 import SectionHeading from '@/components/shared/SectionHeading';
 import SocialButton from '@/components/shared/SocialButton';
+import SocialPromoSection from '@/components/shared/SpecialPromoSection';
 import { SPECIALS } from '@/data/specials.data';
 import { motion } from 'framer-motion';
 import { Tag, Instagram, Facebook } from 'lucide-react';
@@ -107,34 +108,12 @@ const SpecialsPage = () => (
             />
           ))}
         </ul>
-
-        <section
-          className="mt-14 rounded-3xl bg-slate-900 px-6 py-10 text-center sm:mt-16 sm:px-8 sm:py-12 md:px-12 md:py-16"
-          aria-labelledby="specials-social-title"
-        >
-          <h2
-            id="specials-social-title"
-            className="mb-4 text-2xl font-black text-white sm:text-3xl"
-          >
-            Never Miss a Special
-          </h2>
-
-          <p className="mx-auto mb-8 max-w-xl text-sm leading-7 text-white/70 sm:text-base">
-            Follow us on social media or sign up for our newsletter to be the first to hear about
-            new offers and seasonal events.
-          </p>
-
-          <div className="flex justify-center gap-4">
-            <SocialButton href="#" label="Instagram" Icon={Instagram} />
-            <SocialButton href="#" label="Facebook" Icon={Facebook} />
-            <SocialButton
-              color="text-gray-900"
-              href="https://www.tiktok.com/@kissel.foods"
-              label="Tiktok"
-              Icon={FaTiktok}
-            />
-          </div>
-        </section>
+        <SocialPromoSection
+          className="mt-14 sm:mt-16"
+          bgClassName="bg-slate-900"
+          titleClassName="text-white"
+          textClassName="text-white/70"
+        />
       </div>
     </section>
   </main>

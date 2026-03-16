@@ -2,10 +2,8 @@ import PageHero from '@/components/PageHero';
 import SectionHeading from '@/components/shared/SectionHeading';
 import menu_hero from '@/assets/images/cover_images/menu-hero.webp';
 import { CATERING_PACKAGES } from '@/data/cateringPackage.data';
-import { Instagram, Facebook } from 'lucide-react';
 import CateringPackageCard from '@/components/catering/CateringPackageCard';
-import SocialButton from '@/components/shared/SocialButton';
-import { FaTiktok } from 'react-icons/fa';
+import SocialPromoSection from '@/components/shared/SpecialPromoSection';
 
 CateringPackageCard.displayName = 'CateringPackageCard';
 
@@ -40,33 +38,12 @@ const CateringPage = () => (
           ))}
         </div>
 
-        <section
-          className="rounded-3xl bg-amber-50 px-6 py-10 text-center sm:px-8 sm:py-12 md:px-12 md:py-16"
-          aria-labelledby="catering-social-title"
-        >
-          <h2
-            id="catering-social-title"
-            className="mb-4 text-2xl font-black text-slate-900 sm:text-3xl"
-          >
-            Never Miss a Special
-          </h2>
-
-          <p className="mx-auto mb-8 max-w-xl text-sm leading-7 text-slate-600 sm:text-base">
-            Follow us on social media or sign up for our newsletter to be the first to hear about
-            new offers and seasonal events.
-          </p>
-
-          <div className="flex justify-center gap-4">
-            <SocialButton color="text-gray-900" href="#" label="Instagram" Icon={Instagram} />
-            <SocialButton color="text-gray-900" href="#" label="Facebook" Icon={Facebook} />
-            <SocialButton
-              color="text-gray-900"
-              href="https://www.tiktok.com/@kissel.foods"
-              label="Tiktok"
-              Icon={FaTiktok}
-            />
-          </div>
-        </section>
+        <SocialPromoSection
+          bgClassName="bg-amber-50"
+          titleClassName="text-slate-900"
+          textClassName="text-slate-600"
+          buttonColor="text-gray-900"
+        />
       </div>
     </section>
   </main>
