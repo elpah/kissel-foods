@@ -1,6 +1,5 @@
 import PageHero from '@/components/PageHero';
 import SectionHeading from '@/components/shared/SectionHeading';
-import menu_hero from '@/assets/images/cover_images/menu-hero.webp';
 import { CATERING_PACKAGES } from '@/data/cateringPackage.data';
 import CateringPackageCard from '@/components/catering/CateringPackageCard';
 import SocialPromoSection from '@/components/shared/SpecialPromoSection';
@@ -12,7 +11,7 @@ const CateringPage = () => (
     <PageHero
       title="Catering"
       subtitle="Bringing the Kissel Foods experience to your special events."
-      image={menu_hero}
+      image="/images/cover_images/menu-hero.webp"
     />
 
     <section className="py-16 sm:py-20 lg:py-24" aria-labelledby="catering-packages-title">

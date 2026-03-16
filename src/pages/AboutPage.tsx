@@ -2,9 +2,6 @@ import AboutTeamCard from '@/components/about/AboutTeamCard';
 import LeadershipSection from '@/components/about/LeadershipSection';
 import ValueCard from '@/components/about/ValueCard';
 import PageHero from '@/components/PageHero';
-import about_hero from '@/assets/images/cover_images/about-hero.webp';
-import about_section_image from '@/assets/images/cover_images/about.webp';
-
 import SectionHeading from '@/components/shared/SectionHeading';
 import { LEADERSHIP, TEAM_MEMBERS } from '@/data/team.data';
 import { VALUES } from '@/data/values.data';
@@ -51,7 +48,7 @@ const AboutPage = () => (
     <PageHero
       title="Our Story"
       subtitle="Passion, flavor, and community — the heart of Kissel Foods."
-      image={about_hero}
+      image="/images/cover_images/about-hero.webp"
     />
     <section className="py-16 sm:py-20 lg:py-24" aria-labelledby="about-story-title">
       <div className="container mx-auto px-6">
@@ -89,7 +86,7 @@ const AboutPage = () => (
 
           <motion.div {...fadeRight} className="relative">
             <img
-              src={about_section_image}
+              src="/images/cover_images/about.webp"
               alt="Kissel Foods kitchen team at work"
               loading="lazy"
               className="h-[360px] w-full rounded-3xl object-cover shadow-2xl sm:h-[420px] lg:h-[500px]"
