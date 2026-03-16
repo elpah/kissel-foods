@@ -1,5 +1,31 @@
 import { MenuItemType } from '@/types/menu.type';
 
+import {
+  assortedFriedRice,
+  jollofRice,
+  friedRice,
+  yamChips,
+  bankuTilapia,
+  bankuOkro,
+  beans,
+  yamKontomire,
+  eba,
+  sobolo,
+  pineappleJuice,
+  rockBuns,
+  meatPie,
+  cupCake,
+  cake,
+  chocolateRoll,
+  bananaBread,
+  coconutBread,
+  blazePizza,
+  pepperoniPizza,
+  beefPizza,
+  veganPizza,
+  exoticPizza,
+} from '@/assets/images/menu';
+
 export const MENU_ITEMS: MenuItemType[] = [
   {
     id: 'k1',
@@ -7,7 +33,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵70.00',
     description: 'Flavorful fried rice mixed with vegetables and spices.',
     category: 'Main',
-    image: '/images/menu/assorted-friedrice.webp',
+    image: assortedFriedRice,
   },
   {
     id: 'k2',
@@ -15,7 +41,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵55.00',
     description: 'Classic Ghanaian jollof rice cooked in rich tomato sauce.',
     category: 'Main',
-    image: '/images/menu/jollof-rice.webp',
+    image: jollofRice,
   },
   {
     id: 'k3',
@@ -23,7 +49,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵50.00',
     description: 'Savory fried rice with vegetables and spices.',
     category: 'Main',
-    image: '/images/menu/friedrice.webp',
+    image: friedRice,
   },
   {
     id: 'k4',
@@ -31,7 +57,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵50.00',
     description: 'Crispy deep-fried yam chips served hot.',
     category: 'Main',
-    image: '/images/menu/yam-chips.webp',
+    image: yamChips,
   },
   {
     id: 'k5',
@@ -39,7 +65,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵70.00 upwards',
     description: 'Traditional banku served with grilled tilapia and pepper sauce.',
     category: 'Main',
-    image: '/images/menu/banku-tilapia.webp',
+    image: bankuTilapia,
   },
   {
     id: 'k6',
@@ -47,7 +73,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵50.00',
     description: 'Banku served with delicious okro stew.',
     category: 'Main',
-    image: '/images/menu/banku-okro.webp',
+    image: bankuOkro,
   },
   {
     id: 'k7',
@@ -55,7 +81,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵50.00',
     description: 'Rich beans stew served with tasty sides.',
     category: 'Main',
-    image: '/images/menu/beans.webp',
+    image: beans,
   },
   {
     id: 'k8',
@@ -63,7 +89,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵40.00',
     description: 'Soft boiled yam slices served warm.',
     category: 'Main',
-    image: '/images/menu/yam-kontomire.webp',
+    image: yamKontomire,
   },
   {
     id: 'k9',
@@ -71,7 +97,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵50.00',
     description: 'Garri (eba) served with rich egusi soup.',
     category: 'Main',
-    image: '/images/menu/eba.webp',
+    image: eba,
   },
 
   // Drinks
@@ -82,7 +108,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     description: 'Refreshing hibiscus drink brewed with spices.',
     category: 'Drinks',
 
-    image: '/images/menu/sobolo.webp',
+    image: sobolo,
   },
   {
     id: 'k11',
@@ -90,7 +116,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: ' GH₵20.00',
     description: 'Fresh pineapple juice served chilled.',
     category: 'Drinks',
-    image: '/images/menu/pineapple-juice.webp',
+    image: pineappleJuice,
   },
 
   // Pastries
@@ -100,7 +126,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵10.00',
     description: 'Crunchy sweet baked buns.',
     category: 'Pastries',
-    image: '/images/menu/rock-buns.webp',
+    image: rockBuns,
   },
   {
     id: 'k13',
@@ -108,7 +134,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵10.00',
     description: 'Flaky pastry filled with seasoned meat.',
     category: 'Pastries',
-    image: '/images/menu/meat-pie.webp',
+    image: meatPie,
   },
   {
     id: 'k14',
@@ -116,7 +142,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵7.00',
     description: 'Soft and fluffy cupcake treat.',
     category: 'Pastries',
-    image: '/images/menu/cup-cake.webp',
+    image: cupCake,
   },
   {
     id: 'k15',
@@ -124,7 +150,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵20.00 / GH₵30.00 / GH₵40.00',
     description: 'Delicious layered cake available in multiple sizes.',
     category: 'Pastries',
-    image: '/images/menu/cake.webp',
+    image: cake,
   },
   {
     id: 'k16',
@@ -132,7 +158,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵8.00 / GH₵10.00',
     description: 'Soft chocolate filled pastry roll.',
     category: 'Pastries',
-    image: '/images/menu/chocolate-roll.webp',
+    image: chocolateRoll,
   },
   {
     id: 'k17',
@@ -140,7 +166,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵20.00',
     description: 'Moist banana flavored bread loaf.',
     category: 'Pastries',
-    image: '/images/menu/banana-bread.webp',
+    image: bananaBread,
   },
   {
     id: 'k18',
@@ -148,7 +174,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'GH₵20.00',
     description: 'Sweet bread infused with coconut flavor.',
     category: 'Pastries',
-    image: '/images/menu/coconut-bread.webp',
+    image: coconutBread,
   },
 
   // Pizza
@@ -158,7 +184,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'Small GH₵90 / Medium GH₵130 / Large GH₵150',
     description: 'Flavorful chicken pizza with a spicy kick.',
     category: 'Pizza',
-    image: '/images/menu/blaze-pizza.webp',
+    image: blazePizza,
   },
   {
     id: 'k20',
@@ -166,7 +192,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'Small GH₵90 / Medium GH₵130 / Large GH₵150',
     description: 'Classic pepperoni pizza with a touch of heat.',
     category: 'Pizza',
-    image: '/images/menu/pepperoni-pizza.webp',
+    image: pepperoniPizza,
   },
   {
     id: 'k21',
@@ -174,7 +200,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'Small GH₵90 / Medium GH₵130 / Large GH₵150',
     description: 'Loaded with juicy beef and rich flavors.',
     category: 'Pizza',
-    image: '/images/menu/beef-pizza.webp',
+    image: beefPizza,
   },
   {
     id: 'k22',
@@ -182,7 +208,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'Small GH₵90 / Medium GH₵130 / Large GH₵150',
     description: 'Delicious plant-based pizza for veggie lovers.',
     category: 'Pizza',
-    image: '/images/menu/vegan-pizza.webp',
+    image: veganPizza,
   },
   {
     id: 'k23',
@@ -190,6 +216,6 @@ export const MENU_ITEMS: MenuItemType[] = [
     price: 'Medium GH₵160 / Large GH₵180 / Family GH₵250',
     description: 'Special blend of toppings for the ultimate pizza experience.',
     category: 'Pizza',
-    image: '/images/menu/exotic-pizza.webp',
+    image: exoticPizza,
   },
 ];

@@ -1,12 +1,12 @@
 import { TeamMemberType } from '@/types/team.type';
-
+import { kofiAsiedu, abigail } from '@/assets/images/team_images';
 export const LEADERSHIP: TeamMemberType[] = [
   {
     id: 't1',
-    name: 'Bless K. Asiedu',
+    name: 'Kofi Asiedu',
     role: 'Executive CEO & Founder',
     bio: 'Kofi Asiedu is the founder and driving force behind Kissel Foods. He started the business after recognizing that many busy workers lacked convenient, quality meal options. Inspired by global food brands and his travel experiences, he built Kissel Foods from a small two-person operation into a growing food brand with a strong delivery system and loyal customer base. With experience across banking, safety, academia, human services, and government, Kofi brings a diverse perspective to the business as he works toward expanding Kissel Foods across Ghana and beyond.',
-    image: '/images/team_images/mr_kofi.webp',
+    image: kofiAsiedu,
     theme: 'light',
   },
   {
@@ -33,6 +33,6 @@ export const TEAM_MEMBERS: TeamMemberType[] = [
     name: 'Abigail',
     role: 'Account Cook',
     bio: "Abigail's a rockstar! A trained nurse who has temporarily traded stethoscopes for spreadsheets, saucepans and spatulas. For the past three years, she's been the face of Kissel Foods, handling accounts and reception with ease. But that's not all - Abigail's got a secret talent: she's mastered the art of cooking, and it's become her passion! Calm, friendly, and loyal, Abigail's the glue that holds things together. She truly gets the vision of the bosses, and her understanding of what makes people tick is invaluable. Whether she's whipping up a dish in the kitchen or greeting customers with a smile, Abigail's all about making Kissel Foods shine!",
-    image: '/images/team_images/abigail.webp',
+    image: abigail,
   },
 ];

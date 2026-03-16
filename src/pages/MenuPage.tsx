@@ -1,6 +1,7 @@
 import CategoryFilter from '@/components/home/CategoryFilter';
 import PageHero from '@/components/PageHero';
 import MenuCard from '@/components/shared/MenuCard';
+import menu_hero from '@/assets/images/cover_images/menu-hero.webp';
 import SectionHeading from '@/components/shared/SectionHeading';
 import { CATEGORIES } from '@/data/categories.data';
 import { MENU_ITEMS } from '@/data/menu.data';
@@ -31,9 +32,8 @@ const MenuPage = () => {
       <PageHero
         title="Our Menu"
         subtitle="Handcrafted dishes made with the finest seasonal ingredients."
-        image="images/cover_images/menu-hero.webp"
+        image={menu_hero}
       />
-
       <section className="py-16 sm:py-20 lg:py-24" aria-labelledby="menu-section-title">
         <div className="container mx-auto px-6">
           <SectionHeading

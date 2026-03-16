@@ -1,12 +1,13 @@
 import CategoryFilter from '@/components/home/CategoryFilter';
 import MenuCard from '@/components/shared/MenuCard';
 import SectionHeading from '@/components/shared/SectionHeading';
+import home_hero from '@/assets/images/cover_images/home-hero.webp';
+import home_hero_mobile from '@/assets/images/cover_images/home-hero-mobile.webp';
 import { CATEGORIES } from '@/data/categories.data';
 import { MENU_ITEMS } from '@/data/menu.data';
 import { SITELINKS } from '@/data/siteLinks.data';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Category } from '@/types/categories.type';
-import { MenuItemType } from '@/types/menu.type';
 import { SitelinkType } from '@/types/siteLink.type';
 import { motion } from 'framer-motion';
 import { ChevronRight, Phone, MessageCircle } from 'lucide-react';
@@ -126,9 +127,7 @@ const HomePage = () => {
     ];
   }, [activeCategory]);
 
-  const heroImage = isMobile
-    ? '/images/cover_images/home-hero-mobile.webp'
-    : '/images/cover_images/home-hero.webp';
+  const heroImage = isMobile ? home_hero_mobile : home_hero;
 
   return (
     <main>

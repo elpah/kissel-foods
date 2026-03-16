@@ -1,6 +1,7 @@
 import PageHero from '@/components/PageHero';
 import SectionHeading from '@/components/shared/SectionHeading';
 import SocialButton from '@/components/shared/SocialButton';
+import contact_hero from '@/assets/images/cover_images/contact-hero.webp';
 import { HOURS } from '@/data/hours.data';
 import { motion } from 'framer-motion';
 import {
@@ -208,9 +209,8 @@ const ContactPage = () => {
       <PageHero
         title="Contact Us"
         subtitle="We’d love to hear from you. Reach out any time."
-        image="/images/cover_images/contact-hero.webp"
+        image={contact_hero}
       />
-
       <section className="py-16 sm:py-20 lg:py-24" aria-labelledby="contact-section-title">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-5 lg:gap-12">

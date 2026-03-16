@@ -1,5 +1,6 @@
 import PageHero from '@/components/PageHero';
 import SectionHeading from '@/components/shared/SectionHeading';
+import menu_hero from '@/assets/images/cover_images/menu-hero.webp';
 import { CATERING_PACKAGES } from '@/data/cateringPackage.data';
 import { Instagram, Facebook } from 'lucide-react';
 import CateringPackageCard from '@/components/catering/CateringPackageCard';
@@ -13,7 +14,7 @@ const CateringPage = () => (
     <PageHero
       title="Catering"
       subtitle="Bringing the Kissel Foods experience to your special events."
-      image="images/cover_images/menu-hero.webp"
+      image={menu_hero}
     />
 
     <section className="py-16 sm:py-20 lg:py-24" aria-labelledby="catering-packages-title">
