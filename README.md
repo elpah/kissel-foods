@@ -16,33 +16,34 @@ A modern, responsive restaurant website built with **React**, **TypeScript**, **
 
 ## 📁 Project Structure
 
-```bash
+``` bash
 public/
 ├── images/
-│	├── cover_images/
-│ 	├── menu/
-|	└──Logo
+│   ├── cover_images/
+│   ├── menu/
+│   └── logo/
 ├── favicon.ico
+
 src/
 ├── components/
 │   ├── about/
-|	├── catering/
-|	├──	home/
-|	├── reservation/
-|	├── Shared/
-|	├──Footer.tsx
-|	├──Navigation.tsx
-|	└──PageHero.tsx      
+│   ├── catering/
+│   ├── home/
+│   ├── reservation/
+│   ├── shared/
+│   ├── Footer.tsx
+│   ├── Navigation.tsx
+│   └── PageHero.tsx
 ├── data/
 ├── hooks/
-│   └── use-mobile.ts                  # Mobile breakpoint detection hook
+│   └── use-mobile.ts        # Mobile breakpoint detection hook
 ├── lib/
-│   └── utils.ts                       # Utility functions
+│   └── utils.ts             # Utility functions
 ├── pages/
 ├── types/
-├── App.tsx                            # Root component wrapper
-├── main.tsx                           # Application entry point
-└── index.css                          # Global styles & Tailwind setup
+├── App.tsx                  # Root component wrapper
+├── main.tsx                 # Application entry point
+└── index.css                # Global styles & Tailwind setup
 
 ```
 
