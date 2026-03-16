@@ -12,7 +12,7 @@ export const LEADERSHIP: TeamMemberType[] = [
   {
     id: 't2',
     name: 'Comfort Asiedu',
-    role: 'COO and Mastet Chef',
+    role: 'COO and Master Chef',
     bio: 'Comfort is the COO and “Boss Chef” at Kissel Foods, leading the culinary team with creativity and expertise. With a background in midwifery and catering, she brings a unique blend of care, leadership, and attention to detail to the kitchen. Comfort oversees the menu, recipes, and staff, ensuring every dish reflects her philosophy that great food should taste natural. Her passion for authentic flavors and empowering her team helps make Kissel Foods a true culinary gem.',
     image:
       'https://images.unsplash.com/photo-1607631568010-a87245c0daf8?auto=format&fit=crop&q=80&w=400',
