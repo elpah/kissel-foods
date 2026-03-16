@@ -3,7 +3,7 @@
 ## Live Demo
 https://kisselfoods.com
 
-A modern, responsive restaurant website built with **React**, **TypeScript**, **Vite**, **Tailwind CSS** **React Router** for navigation and **EmailJS** for email notifications. Features a beautiful multi-page SPA with smooth animations using **Framer Motion**.
+A modern, responsive restaurant website built with **React**, **TypeScript**, **Vite**, **Tailwind CSS**, **React Router** for navigation and **EmailJS** for email notifications. Features a beautiful multi-page SPA with smooth animations using **Framer Motion**.
 
 ## Features
 
