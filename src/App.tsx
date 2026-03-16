@@ -24,9 +24,9 @@ function App() {
   }, [pathname]);
 
   return (
-    <div className="app-container">
+    <div className="flex flex-col min-h-screen">
       <Navigation />
-      <div className="content">
+      <div className="grow">
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route path="/" element={<HomePage />} />
