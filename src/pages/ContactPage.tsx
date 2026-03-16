@@ -13,6 +13,7 @@ import {
   type LucideIcon,
 } from 'lucide-react';
 import { useState, type ChangeEvent, type FormEvent, memo } from 'react';
+import { FaTiktok } from 'react-icons/fa';
 
 type ContactFormState = {
   name: string;
@@ -373,6 +374,11 @@ const ContactPage = () => {
                 <div className="flex flex-wrap gap-4">
                   <SocialButton href="#" label="Instagram" Icon={Instagram} />
                   <SocialButton href="#" label="Facebook" Icon={Facebook} />
+                  <SocialButton
+                    href="https://www.tiktok.com/@kissel.foods"
+                    label="Tiktok"
+                    Icon={FaTiktok}
+                  />
                 </div>
               </section>
             </aside>

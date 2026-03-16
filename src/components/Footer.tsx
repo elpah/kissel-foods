@@ -1,4 +1,5 @@
 import { HOURS } from '@/data/hours.data';
+import type { ComponentType } from 'react';
 import { SITELINKS } from '@/data/siteLinks.data';
 import {
   Instagram,
@@ -9,6 +10,7 @@ import {
   ArrowUpRight,
   type LucideIcon,
 } from 'lucide-react';
+import { FaTiktok } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 type FooterTitleProps = {
@@ -25,7 +27,7 @@ const FooterTitle = ({ id, children }: FooterTitleProps) => (
 type SocialLinkProps = {
   href: string;
   label: string;
-  Icon: LucideIcon;
+  Icon: ComponentType<{ className?: string }>;
 };
 
 const SocialLink = ({ href, label, Icon }: SocialLinkProps) => (
@@ -86,6 +88,11 @@ const Footer = () => {
             <div className="flex items-center gap-3">
               <SocialLink href="#" label="Instagram" Icon={Instagram} />
               <SocialLink href="#" label="Facebook" Icon={Facebook} />
+              <SocialLink
+                href="https://www.tiktok.com/@kissel.foods"
+                label="Tiktok"
+                Icon={FaTiktok}
+              />
             </div>
           </div>
 

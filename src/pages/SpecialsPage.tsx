@@ -5,6 +5,7 @@ import { SPECIALS } from '@/data/specials.data';
 import { motion } from 'framer-motion';
 import { Tag, Instagram, Facebook } from 'lucide-react';
 import { memo } from 'react';
+import { FaTiktok } from 'react-icons/fa';
 
 type SpecialCardProps = {
   id: string;
@@ -126,6 +127,12 @@ const SpecialsPage = () => (
           <div className="flex justify-center gap-4">
             <SocialButton href="#" label="Instagram" Icon={Instagram} />
             <SocialButton href="#" label="Facebook" Icon={Facebook} />
+            <SocialButton
+              color="text-gray-900"
+              href="https://www.tiktok.com/@kissel.foods"
+              label="Tiktok"
+              Icon={FaTiktok}
+            />
           </div>
         </section>
       </div>

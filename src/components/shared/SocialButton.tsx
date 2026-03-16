@@ -1,9 +1,9 @@
-import { LucideIcon } from 'lucide-react';
+import type { ComponentType } from 'react';
 
 type SocialButtonProps = {
   href: string;
   label: string;
-  Icon: LucideIcon;
+  Icon: ComponentType<{ className?: string }>;
   color?: string;
 };
 

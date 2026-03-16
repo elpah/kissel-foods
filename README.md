@@ -1,6 +1,7 @@
 # Kissel Foods Restaurant Website
 
 ## Live Demo
+
 https://kisselfoods.com
 
 A modern, responsive restaurant website built with **React**, **TypeScript**, **Vite**, **Tailwind CSS** **React Router** for navigation and **EmailJS** for email notifications. Features a beautiful multi-page SPA with smooth animations using **Framer Motion**.
@@ -32,7 +33,7 @@ src/
 |	├── Shared/
 |	├──Footer.tsx
 |	├──Navigation.tsx
-|	└──PageHero.tsx      
+|	└──PageHero.tsx
 ├── data/
 ├── hooks/
 │   └── use-mobile.ts                  # Mobile breakpoint detection hook
@@ -55,30 +56,31 @@ src/
 - **Animation** — Framer Motion
 - **Icons** — Lucide React
 
-
 ## Design System
 
 ### Color Palette
+
 - **Primary** — Black (#1a1a1a) / Dark slate (#0d0d0d for hero)
 - **Accent** — Amber (#f97316, #f59e0b)
 - **Neutral** — Slate grays (50–900)
 - **Success** — Green (#22c55e)
 
 ### Typography
+
 - **Headlines** — Inter Bold / Black, tracking-tight
 - **Body** — Inter Regular, 16px base
 - **Accent** — Georgia, Helvetica for typography variety
 
-##  Responsive Breakpoints
+## Responsive Breakpoints
 
 - **Mobile** — < 768px
 - **Tablet** — 768px – 1024px
 - **Desktop** — 1024px+
 
-
-##  Deployment
+## Deployment
 
 ### Build
+
 ```bash
 npm run build
 ```
@@ -87,7 +89,7 @@ The optimized build output goes to the `dist/` directory. Deploy this folder to 
 
 ## 📝 License
 
-© 2026 Kissel Foods Restaurant. All rights reserved. 
+© 2026 Kissel Foods Restaurant. All rights reserved.
 
 Designed and developed by Paruah Systems
 https://www.paruah.com

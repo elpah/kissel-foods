@@ -1,9 +1,10 @@
 import PageHero from '@/components/PageHero';
 import SectionHeading from '@/components/shared/SectionHeading';
 import { CATERING_PACKAGES } from '@/data/cateringPackage.data';
-import { Instagram, Facebook, type LucideIcon } from 'lucide-react';
+import { Instagram, Facebook } from 'lucide-react';
 import CateringPackageCard from '@/components/catering/CateringPackageCard';
 import SocialButton from '@/components/shared/SocialButton';
+import { FaTiktok } from 'react-icons/fa';
 
 CateringPackageCard.displayName = 'CateringPackageCard';
 
@@ -57,6 +58,12 @@ const CateringPage = () => (
           <div className="flex justify-center gap-4">
             <SocialButton color="text-gray-900" href="#" label="Instagram" Icon={Instagram} />
             <SocialButton color="text-gray-900" href="#" label="Facebook" Icon={Facebook} />
+            <SocialButton
+              color="text-gray-900"
+              href="https://www.tiktok.com/@kissel.foods"
+              label="Tiktok"
+              Icon={FaTiktok}
+            />
           </div>
         </section>
       </div>
