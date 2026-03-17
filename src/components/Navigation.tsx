@@ -50,7 +50,13 @@ const Navigation = () => {
       >
         <div className="container mx-auto px-6 flex items-center justify-between">
           <Link to="/" className="flex items-center" aria-label="Go to homepage">
-            <img src="/images/kissel_logo.png" alt="LOGO" className="h-auto w-20 md:w-25 " />
+            <img
+              width={160}
+              height={96}
+              src="/images/kissel_logo.webp"
+              alt="LOGO"
+              className="h-12 md:h-15 w-20 md:w-25 "
+            />
           </Link>
 
           <div className="hidden md:flex items-center gap-4 lg:gap-8">

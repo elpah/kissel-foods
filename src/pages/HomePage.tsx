@@ -134,6 +134,9 @@ const HomePage = () => {
       <header className="relative min-h-screen overflow-hidden">
         <img
           src={heroImage}
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
           alt="Home Cover Image"
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover"
@@ -152,7 +155,7 @@ const HomePage = () => {
                 Culinary Excellence
               </p>
 
-              <h1 className="mb-5 text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+              <h1 className="mb-5 text-4xl  font-black leading-tight tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
                 <span>Flavor That</span>
                 <br />
                 <span className="text-amber-400">Tells a Story.</span>
