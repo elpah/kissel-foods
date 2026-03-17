@@ -18,7 +18,13 @@ const PageHero = ({ title, subtitle, image }: PageHeroProps) => {
       aria-labelledby="page-hero-title"
     >
       <figure className="absolute inset-0">
-        <img src={image} alt="" aria-hidden="true" className="h-full w-full object-cover" />
+        <img
+          src={image}
+          alt="Cover Image"
+          aria-hidden="true"
+          fetchPriority="high"
+          className="h-full w-full object-cover"
+        />
         <div className="absolute inset-0 bg-black/55" />
       </figure>
 

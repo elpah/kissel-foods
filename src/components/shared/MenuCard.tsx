@@ -34,6 +34,8 @@ const MenuCard = memo(({ item }: MenuCardProps) => (
       <img
         src={item.image}
         alt={item.name}
+        width="740"
+        height="416"
         loading="lazy"
         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
       />
