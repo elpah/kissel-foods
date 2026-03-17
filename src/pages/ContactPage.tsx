@@ -209,7 +209,7 @@ const ContactPage = () => {
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         formState,
         {
-          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KY,
         }
       );
 
@@ -218,7 +218,7 @@ const ContactPage = () => {
         import.meta.env.VITE_EMAILJS_AUTO_REPLY_TEMPLATE,
         formState,
         {
-          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KY,
         }
       );
 
