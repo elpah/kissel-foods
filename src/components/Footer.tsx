@@ -77,7 +77,7 @@ const Footer = () => {
               className="mb-6 inline-flex items-center gap-3"
               aria-label="Go to homepage"
             >
-              <img src="/images/kissel_logo.png" alt="LOGO" className="h-auto w-20 md:w-25 " />
+              <img src="/images/kissel_logo.webp" alt="LOGO" className="h-auto w-20 md:w-25 " />
             </Link>
 
             <p className="mb-6 max-w-sm text-sm leading-7 text-slate-300">

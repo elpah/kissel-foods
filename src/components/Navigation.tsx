@@ -10,7 +10,7 @@ const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
   const currentPage = location.pathname;
   const isHome = currentPage === '/';
-  const isTransparent = isHome && !scrolled;
+  // const isTransparent = isHome && !scrolled;
 
   useEffect(() => {
     const handleScroll = () => {

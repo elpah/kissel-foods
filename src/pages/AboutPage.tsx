@@ -1,9 +1,9 @@
 import AboutTeamCard from '@/components/about/AboutTeamCard';
-import LeadershipSection from '@/components/about/LeadershipSection';
+// import LeadershipSection from '@/components/about/LeadershipSection';
 import ValueCard from '@/components/about/ValueCard';
 import PageHero from '@/components/PageHero';
 import SectionHeading from '@/components/shared/SectionHeading';
-import { LEADERSHIP, TEAM_MEMBERS } from '@/data/team.data';
+// import { LEADERSHIP, TEAM_MEMBERS } from '@/data/team.data';
 import { VALUES } from '@/data/values.data';
 import { motion } from 'framer-motion';
 import { memo } from 'react';
@@ -116,7 +116,7 @@ const AboutPage = () => (
             ))}
           </div>
         </section>
-        <div className="mb-10 text-center sm:mb-12">
+        {/* <div className="mb-10 text-center sm:mb-12">
           <SectionHeading
             title="The People Behind the Food"
             description="Meet the team that makes Kissel Foods extraordinary."
@@ -143,7 +143,7 @@ const AboutPage = () => (
               />
             ))}
           </ul>
-        </section>
+        </section> */}
       </div>
     </section>
   </main>
