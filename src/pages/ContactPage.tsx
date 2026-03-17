@@ -1,6 +1,7 @@
 import PageHero from '@/components/PageHero';
 import SectionHeading from '@/components/shared/SectionHeading';
 import SocialButton from '@/components/shared/SocialButton';
+import emailjs from '@emailjs/browser';
 import { HOURS } from '@/data/hours.data';
 import { motion } from 'framer-motion';
 import {
@@ -167,7 +168,8 @@ InfoItem.displayName = 'InfoItem';
 
 const ContactPage = () => {
   const [formState, setFormState] = useState<ContactFormState>(INITIAL_FORM_STATE);
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState<boolean>(false);
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -193,9 +195,41 @@ const ContactPage = () => {
     }));
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+
+    if (isSubmitting) return;
+
+    setIsSubmitting(true);
+    setSubmitted(false);
+
+    try {
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        formState,
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        }
+      );
+
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_AUTO_REPLY_TEMPLATE,
+        formState,
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        }
+      );
+
+      setFormState(INITIAL_FORM_STATE);
+      setSubmitted(true);
+    } catch (error) {
+      console.error('Failed to send email:', error);
+      setSubmitted(false);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleReset = () => {
@@ -311,8 +345,14 @@ const ContactPage = () => {
                       />
 
                       <button
+                        disabled={isSubmitting}
                         type="submit"
-                        className="group flex w-full items-center justify-center gap-3 rounded-xl bg-slate-900 py-4 text-base font-black text-white transition-all hover:bg-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 sm:text-lg"
+                        className={`group flex w-full items-center justify-center gap-3 rounded-xl py-4 text-base font-black text-white transition-all sm:text-lg
+                      ${
+                        isSubmitting
+                          ? 'cursor-not-allowed bg-slate-400'
+                          : 'cursor-pointer bg-slate-900 hover:bg-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2'
+                      }`}
                       >
                         <span>Send Message</span>
                         <Send className="h-5 w-5 transition-transform group-hover:translate-x-1" />
