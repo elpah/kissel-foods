@@ -10,7 +10,6 @@ const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
   const currentPage = location.pathname;
   const isHome = currentPage === '/';
-  // const isTransparent = isHome && !scrolled;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -112,7 +111,7 @@ const Navigation = () => {
           >
             <div className="flex justify-between items-center mb-10">
               <Link to="/" className="flex items-center gap-2.5" aria-label="Go to homepage">
-                <img src="/images/kissel_logo.png" alt="LOGO" className="h-auto w-20  " />
+                <img src="/images/kissel_logo.webp" alt="LOGO" className="h-auto w-20  " />
               </Link>
 
               <button
