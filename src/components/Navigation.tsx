@@ -21,10 +21,6 @@ const Navigation = () => {
   }, []);
 
   useEffect(() => {
-    setIsMenuOpen(false);
-  }, [location.pathname]);
-
-  useEffect(() => {
     const originalOverflow = document.body.style.overflow;
     const originalTouchAction = document.body.style.touchAction;
 
@@ -130,7 +126,7 @@ const Navigation = () => {
                   const Icon = link.Icon;
 
                   return (
-                    <li key={link.label}>
+                    <li key={link.label} onClick={() => setIsMenuOpen(false)}>
                       <NavLink
                         to={link.page}
                         className={({ isActive }) =>
