@@ -1,16 +1,8 @@
 import { HOURS } from '@/data/hours.data';
 import type { ComponentType } from 'react';
 import { SITELINKS } from '@/data/siteLinks.data';
-import {
-  Instagram,
-  Facebook,
-  MapPin,
-  Phone,
-  Mail,
-  ArrowUpRight,
-  type LucideIcon,
-} from 'lucide-react';
-import { FaTiktok } from 'react-icons/fa';
+import { Instagram, Facebook, MapPin, Phone, Mail, ArrowUpRight } from 'lucide-react';
+import { FaTiktok, FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 type FooterTitleProps = {
@@ -44,7 +36,7 @@ const SocialLink = ({ href, label, Icon }: SocialLinkProps) => (
 
 type ContactItemProps = {
   href: string;
-  Icon: LucideIcon;
+  Icon: ComponentType<{ className?: string }>;
   children: React.ReactNode;
   external?: boolean;
   align?: 'start' | 'center';
@@ -60,7 +52,6 @@ const ContactItem = ({ href, Icon, children, external = false }: ContactItemProp
       <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/5 text-amber-400 ring-1 ring-white/10">
         <Icon className="h-5 w-5" />
       </span>
-
       <span className="leading-6">{children}</span>
     </a>
   </li>
@@ -141,11 +132,12 @@ const Footer = () => {
               >
                 GG74+3QF, Accra - Cape Coast Rd, Accra, Ghana
               </ContactItem>
-
-              <ContactItem href="tel:++233537947455" Icon={Phone}>
+              <ContactItem href="tel:+233537947455" Icon={Phone}>
                 +233 53 794 7455
               </ContactItem>
-
+              <ContactItem href="https://wa.me/233537947455" Icon={FaWhatsapp} external>
+                Chat on WhatsApp
+              </ContactItem>
               <ContactItem href="mailto:info@kisselfoods.com" Icon={Mail}>
                 info@kisselfoods.com
               </ContactItem>

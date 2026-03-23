@@ -56,14 +56,14 @@ const MenuCard = memo(({ item }: MenuCardProps) => (
           {item.category}
         </span>
 
-        <button
+        {/* <button
           type="button"
           className="inline-flex items-center gap-1 text-sm font-semibold text-slate-900 transition-colors hover:text-amber-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2"
           aria-label={`Order ${item.name}`}
         >
           <span>Order Now</span>
           <ChevronRight className="h-4 w-4" />
-        </button>
+        </button> */}
       </div>
     </div>
   </motion.article>

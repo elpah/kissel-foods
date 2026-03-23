@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { CheckCircle, Link } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { memo } from 'react';
 
 type CateringPackageCardProps = {
@@ -89,7 +90,7 @@ const CateringPackageCard = memo(
             : 'bg-slate-100 text-slate-900 hover:bg-slate-200'
         }`}
       >
-        Get a Quote
+        Get A Quote
       </Link>
     </motion.article>
   )

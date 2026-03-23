@@ -36,8 +36,7 @@ export default function SocialPromoSection({
       <p className={`mx-auto mb-8 max-w-xl text-sm leading-7 sm:text-base ${textClassName}`}>
         {description}
       </p>
-
-      <div className="flex justify-center gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-md m-auto">
         <SocialButton color={buttonColor} href="#" label="Instagram" Icon={Instagram} />
         <SocialButton color={buttonColor} href="#" label="Facebook" Icon={Facebook} />
         <SocialButton

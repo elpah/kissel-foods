@@ -1,12 +1,10 @@
 import PageHero from '@/components/PageHero';
 import SectionHeading from '@/components/shared/SectionHeading';
-import SocialButton from '@/components/shared/SocialButton';
 import SocialPromoSection from '@/components/shared/SpecialPromoSection';
 import { SPECIALS } from '@/data/specials.data';
 import { motion } from 'framer-motion';
-import { Tag, Instagram, Facebook } from 'lucide-react';
+import { Tag } from 'lucide-react';
 import { memo } from 'react';
-import { FaTiktok } from 'react-icons/fa';
 
 type SpecialCardProps = {
   id: string;
